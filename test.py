@@ -4,7 +4,7 @@ import calendar
 
 print("TASK 1")
 
-df = pd.read_excel(r"D:\Scripts\task1 - Copy\Derivation Data [MeasurementData25hz [29-08 15.40 - 29-08 15.50]].xlsx")
+df = pd.read_excel(r"filename")
 
 dfs = (list(map(lambda x: datetime.datetime.strptime(x,'%Y-%m-%d %H:%M:%S.%f').strftime('%Y-%m-%d %H:%M:%S.%f'), df['STARTDATE'])))  # working
 
